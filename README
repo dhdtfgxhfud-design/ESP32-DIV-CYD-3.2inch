@@ -1,142 +1,72 @@
-# ESP32 Marauder - CYD Edition
+ESP32 Marauder - CYD Edition
 
-&lt;div align="center"&gt;
+Image
+Wireless Penetration Testing Tool
+Optimized for ESP32-2432S032C (CYD) 3.2" Display
 
-**Wireless Penetration Testing Tool**  
-*Optimized for ESP32-2432S032C (CYD) 3.2" Display*
+📋 Table of Contents
+[Features](WiFi, Bluetooth, 2.4GHz, SubGHz, IR Remote, Tools)
+[Screenshots](#Image)
+[Hardware Requirements](#ESP32-2432S032C, ESP32-2432S032)
+Developer
+✨ Features
+Feature	Description
+WiFi Security	Deauth, Evil Twin, Beacon Spam, Packet Sniffing
+Bluetooth Testing	BLE Scan, BLE Spam, Bad BLE HID
+RF Analysis	2.4GHz & SubGHz scanning, jamming, replay
+IR Control	Read, transmit & brute-force IR signals
+Touch GUI	Optimized 320×240 capacitive touch interface
+Portable	Standalone device, no PC required
+🔧 Hardware Requirements
+Component	Specification
+Main Board	ESP32-2432S032C (CYD)
+Display	3.2" TFT 320×240 Capacitive Touch
+Connection	USB-C Cable
+Optional	External antennas for extended range
+Method 2: ESP32 Flash Download Tool
+Download latest .bin from Releases
+Open ESP32 Flash Download Tool
+Select port & upload .bin at address 0x1000
+Click Start and wait for completion
 
-&lt;/div&gt;
+       0x1000       ESP32-DIV.ino.bootloader.bin
 
----
+       0x8000       ESP32-DIV.ino.partitions.bin
 
-## 📋 Table of Contents
+       0xe000       boot_app0.bin 
 
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Hardware Requirements](#-hardware-requirements)
-- [Installation](#-installation)
-- [Attack Modules](#-attack-modules)
-- [Contributing](#-contributing)
-- [Developer](#-developer)
+       0x10000      ESP32-DIV.ino.bin
+🎯 Attack Modules
+WiFi
+Scan/Ap — Discover access points
+Scan/Station — Find connected clients
+Deauth — Disconnect all clients
+Deauth Target — Disconnect specific device
+Beacon Spam — Flood fake SSIDs
+Evil Portal — Captive portal phishing
+Evil Twin — Fake access point
+Sniff Raw — Capture raw packets
+Sniff Eapol — Capture WPA handshakes
 
----
+Bluetooth
+Scan — Classic Bluetooth discovery
+BLE Scan — Low energy device scan
+BLE Spam — Broadcast fake BLE signals
+Bad BLE — HID keyboard/mouse injection
 
-## ✨ Features
+2.4GHz / SubGHz
+Scan — Frequency scanning
+Jammer — Signal jamming
+Replay — Signal replay attack
+Spectrum — Frequency analysis
 
-| Feature | Description |
-|---------|-------------|
-| **WiFi Security** | Deauth, Evil Twin, Beacon Spam, Packet Sniffing |
-| **Bluetooth Testing** | BLE Scan, BLE Spam, Bad BLE HID |
-| **RF Analysis** | 2.4GHz & SubGHz scanning, jamming, replay |
-| **IR Control** | Read, transmit & brute-force IR signals |
-| **Touch GUI** | Optimized 320×240 capacitive touch interface |
-| **Portable** | Standalone device, no PC required |
+IR Remote
+Read — Capture remote signals
+Send — Transmit saved signals
+Brute Force — Test all IR codes
 
----
+🤝 Contributing
 
-## 📸 Screenshots
-
-&lt;div align="center"&gt;
-
-| Main Menu | WiFi Attacks | Bluetooth |
-|:---------:|:------------:|:---------:|
-| ![Menu](images/menu.jpg) | ![WiFi](images/wifi.jpg) | ![BT](images/bt.jpg) |
-
-&lt;/div&gt;
-
----
-
-## 🔧 Hardware Requirements
-
-| Component | Specification |
-|-----------|-------------|
-| **Main Board** | ESP32-2432S032C (CYD) |
-| **Display** | 3.2" TFT 320×240 Capacitive Touch |
-| **Connection** | USB-C Cable |
-| **Optional** | External antennas for extended range |
-
----
-
-## ⚙️ Installation
-
-### Method 1: ESP32 Flash Download Tool
-
-1. Download latest `.bin` files from [Releases](../../releases)
-2. Open **ESP32 Flash Download Tool**
-3. Select your COM port
-4. Upload files at the following addresses:
-
-| Address | File |
-|---------|------|
-| `0x1000` | `ESP32-DIV.ino.bootloader.bin` |
-| `0x8000` | `ESP32-DIV.ino.partitions.bin` |
-| `0xe000` | `boot_app0.bin` |
-| `0x10000` | `ESP32-DIV.ino.bin` |
-
-5. Click **Start** and wait for completion
-
----
-
-## 🎯 Attack Modules
-
-### WiFi
-
-| Attack | Description |
-|--------|-------------|
-| `Scan/Ap` | Discover access points |
-| `Scan/Station` | Find connected clients |
-| `Deauth` | Disconnect all clients |
-| `Deauth Target` | Disconnect specific device |
-| `Beacon Spam` | Flood fake SSIDs |
-| `Evil Portal` | Captive portal phishing |
-| `Evil Twin` | Fake access point |
-| `Sniff Raw` | Capture raw packets |
-| `Sniff Eapol` | Capture WPA handshakes |
-
-### Bluetooth
-
-| Attack | Description |
-|--------|-------------|
-| `Scan` | Classic Bluetooth discovery |
-| `BLE Scan` | Low energy device scan |
-| `BLE Spam` | Broadcast fake BLE signals |
-| `Bad BLE` | HID keyboard/mouse injection |
-
-### 2.4GHz / SubGHz
-
-| Attack | Description |
-|--------|-------------|
-| `Scan` | Frequency scanning |
-| `Jammer` | Signal jamming |
-| `Replay` | Signal replay attack |
-| `Spectrum` | Frequency analysis |
-
-### IR Remote
-
-| Attack | Description |
-|--------|-------------|
-| `Read` | Capture remote signals |
-| `Send` | Transmit saved signals |
-| `Brute Force` | Test all IR codes |
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests.
-
----
-
-## 👤 Developer
-
-**Developed by 0xmax**
-
-[![Telegram](https://img.shields.io/badge/Telegram-@cyber_max_f-26A5E4?style=flat&logo=telegram)](https://t.me/cyber_max_f)
-
----
-
-&lt;div align="center"&gt;
-
-⭐ **Star this repo if you find it useful!** ⭐
-
-&lt;/div&gt;
+👤 Developer
+Developed by 0xmax
+https://t.me/cyber_max_f
