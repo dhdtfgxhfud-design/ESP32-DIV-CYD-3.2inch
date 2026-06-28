@@ -5,7 +5,7 @@
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
 - [Features](#features)
 - [Screenshots](#screenshots)
@@ -17,7 +17,7 @@
 
 ---
 
-## Features
+## ✨ Features
 
 | Feature | Description |
 |---------|-------------|
@@ -30,13 +30,13 @@
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ![Main Menu](C:\Users\pc\Desktop\ESP32-DIV-main/photo_2026-06-28_19-12-18.jpg)
 
 ---
 
-## Hardware Requirements
+## 🔧 Hardware Requirements
 
 | Component | Specification |
 |-----------|-------------|
@@ -47,7 +47,7 @@
 
 ---
 
-## Installation
+## ⚙️ Installation
 
 ### Method: ESP32 Flash Download Tool
 
@@ -66,7 +66,7 @@
 
 ---
 
-## Attack Modules
+## ⚡ Attack Modules
 
 ### WiFi
 
@@ -102,13 +102,13 @@
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
 ---
 
-## Developer
+## 👨‍💻 Developer
 
 **Developed by 0xmax**
 
