@@ -32,7 +32,7 @@
 
 ## 📸 Screenshots
 
-![Main Menu](C:\Users\pc\Desktop\ESP32-DIV-main/photo_2026-06-28_19-12-18.jpg)
+![Main Menu](https://t.me/c/2656147453/144)
 
 ---
 
