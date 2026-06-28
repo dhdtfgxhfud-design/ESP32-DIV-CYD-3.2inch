@@ -1,1 +1,77 @@
-# ESP32-DIV-CYD-3.2inch
+# ESP32 Marauder - CYD Edition
+
+&lt;div align="center"&gt;
+
+![ESP32 Marauder CYD](images/device-photo.jpg)
+
+**Wireless Penetration Testing Tool**  
+*Optimized for ESP32-2432S032C (CYD) 3.2" Display*
+
+&lt;/div&gt;
+
+---
+
+## 📋 Table of Contents
+
+- [Features](#-features)
+- [Screenshots](#-screenshots)
+- [Hardware Requirements](#-hardware-requirements)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Attack Modules](#-attack-modules)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Credits](#-credits)
+- [Developer](#-developer)
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **WiFi Security** | Deauth, Evil Twin, Beacon Spam, Packet Sniffing |
+| **Bluetooth Testing** | BLE Scan, BLE Spam, Bad BLE HID |
+| **RF Analysis** | 2.4GHz & SubGHz scanning, jamming, replay |
+| **IR Control** | Read, transmit & brute-force IR signals |
+| **Touch GUI** | Optimized 320×240 capacitive touch interface |
+| **Portable** | Standalone device, no PC required |
+
+---
+
+## 📸 Screenshots
+
+&lt;div align="center"&gt;
+
+| Main Menu | WiFi Attacks | Bluetooth |
+|:---------:|:------------:|:---------:|
+| ![Menu](images/menu.jpg) | ![WiFi](images/wifi.jpg) | ![BT](images/bt.jpg) |
+
+&lt;/div&gt;
+
+---
+
+## 🔧 Hardware Requirements
+
+| Component | Specification |
+|-----------|-------------|
+| **Main Board** | ESP32-2432S032C (CYD) |
+| **Display** | 3.2" TFT 320×240 Capacitive Touch |
+| **Connection** | USB-C Cable |
+| **Optional** | External antennas for extended range |
+
+---
+
+## ⚙️ Installation
+
+### Method 1: PlatformIO (Recommended)
+
+```bash
+# Clone the repository
+git clone https://github.com/username/ESP32-Marauder-CYD.git
+
+# Navigate to project folder
+cd ESP32-Marauder-CYD
+
+# Build and upload
+pio run --target upload
