@@ -1,4 +1,4 @@
- ESP32 Marauder - CYD Edition
+ESP32-2432S032C  - CYD Edition
 
 <img width="1200" height="1200" alt="Image" src="https://github.com/user-attachments/assets/15e4d1a4-806d-4607-9229-ef2a882d5355" />
 
