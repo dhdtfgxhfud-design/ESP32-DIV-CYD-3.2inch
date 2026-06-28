@@ -1,100 +1,41 @@
-Markdown
-Preview
-# ESP32 Marauder - CYD Edition
+ESP32 Marauder - CYD Edition
 
-<div align="center">
+Image
+Wireless Penetration Testing Tool
+Optimized for ESP32-2432S032C (CYD) 3.2" Display
 
-![ESP32 Marauder CYD](images/device-photo.jpg)
-
-**Wireless Penetration Testing Tool**  
-*Optimized for ESP32-2432S032C (CYD) 3.2" Display*
-
-</div>
-
----
-
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Hardware Requirements](#-hardware-requirements)
-- [Installation](#-installation)
-- [Usage Guide](#-usage-guide)
-- [Attack Modules](#-attack-modules)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Credits](#-credits)
-- [Developer](#-developer)
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---------|-------------|
-| **WiFi Security** | Deauth, Evil Twin, Beacon Spam, Packet Sniffing |
-| **Bluetooth Testing** | BLE Scan, BLE Spam, Bad BLE HID |
-| **RF Analysis** | 2.4GHz & SubGHz scanning, jamming, replay |
-| **IR Control** | Read, transmit & brute-force IR signals |
-| **Touch GUI** | Optimized 320×240 capacitive touch interface |
-| **Portable** | Standalone device, no PC required |
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| Main Menu | WiFi Attacks | Bluetooth |
-|:---------:|:------------:|:---------:|
-| ![Menu](images/menu.jpg) | ![WiFi](images/wifi.jpg) | ![BT](images/bt.jpg) |
-
-</div>
-
----
-
-## 🔧 Hardware Requirements
-
-| Component | Specification |
-|-----------|-------------|
-| **Main Board** | ESP32-2432S032C (CYD) |
-| **Display** | 3.2" TFT 320×240 Capacitive Touch |
-| **Connection** | USB-C Cable |
-| **Optional** | External antennas for extended range |
-
----
-
-## ⚙️ Installation
-
-### Method 1: PlatformIO (Recommended)
-
-```bash
-# Clone the repository
-git clone https://github.com/username/ESP32-Marauder-CYD.git
-
-# Navigate to project folder
-cd ESP32-Marauder-CYD
-
-# Build and upload
-pio run --target upload
+📋 Table of Contents
+[Features](WiFi, Bluetooth, 2.4GHz, SubGHz, IR Remote, Tools)
+[Screenshots](#Image)
+[Hardware Requirements](#ESP32-2432S032C, ESP32-2432S032)
+Developer
+✨ Features
+Feature	Description
+WiFi Security	Deauth, Evil Twin, Beacon Spam, Packet Sniffing
+Bluetooth Testing	BLE Scan, BLE Spam, Bad BLE HID
+RF Analysis	2.4GHz & SubGHz scanning, jamming, replay
+IR Control	Read, transmit & brute-force IR signals
+Touch GUI	Optimized 320×240 capacitive touch interface
+Portable	Standalone device, no PC required
+🔧 Hardware Requirements
+Component	Specification
+Main Board	ESP32-2432S032C (CYD)
+Display	3.2" TFT 320×240 Capacitive Touch
+Connection	USB-C Cable
+Optional	External antennas for extended range
 Method 2: ESP32 Flash Download Tool
 Download latest .bin from Releases
 Open ESP32 Flash Download Tool
 Select port & upload .bin at address 0x1000
 Click Start and wait for completion
-🚀 Usage Guide
-Quick Start
-plain
-1. Power on the device
-2. Select module from main menu
-3. Choose attack type
-4. Review results on screen
-Menu Navigation
-Table
-Button	Action
-Tap	Select item
-Swipe	Scroll through lists
-Back	Return to previous menu
+
+       0x1000       ESP32-DIV.ino.bootloader.bin
+
+       0x8000       ESP32-DIV.ino.partitions.bin
+
+       0xe000       boot_app0.bin 
+
+       0x10000      ESP32-DIV.ino.bin
 🎯 Attack Modules
 WiFi
 Scan/Ap — Discover access points
@@ -106,49 +47,26 @@ Evil Portal — Captive portal phishing
 Evil Twin — Fake access point
 Sniff Raw — Capture raw packets
 Sniff Eapol — Capture WPA handshakes
+
 Bluetooth
 Scan — Classic Bluetooth discovery
 BLE Scan — Low energy device scan
 BLE Spam — Broadcast fake BLE signals
 Bad BLE — HID keyboard/mouse injection
+
 2.4GHz / SubGHz
 Scan — Frequency scanning
 Jammer — Signal jamming
 Replay — Signal replay attack
 Spectrum — Frequency analysis
+
 IR Remote
 Read — Capture remote signals
 Send — Transmit saved signals
 Brute Force — Test all IR codes
+
 🤝 Contributing
-Contributions are welcome!
-Fork this repository
-Create a new branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some feature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
-🙏 Credits
-Table
-Project	Author	Link
-ESP32 Marauder	justcallmekoko	GitHub
-Bruce Firmware	Bruce Team	GitHub
-LVGL Graphics	LVGL	GitHub
+
 👤 Developer
-Developed by [Your Name]
-https://github.com/username
-https://t.me/username
-<div align="center">
-⭐ Star this repo if you find it useful! ⭐
-</div>
-```
-How to Add This to Your GitHub:
-Go to your repository
-Click "Add file" → "Create new file"
-Name it README.md
-Paste the code above
-Replace:
-username → your GitHub username
-Your Name → your real name
-Image paths with your actual screenshots
+Developed by 0xmax
+https://t.me/cyber_max_f
